@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Gracious Initiative Charity Organization</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        
+        h1, h2, h3, h4 {
+            color: #4CAF50; 
+        }
+        
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        
+        header {
+            background-color: #283593;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .logo img {
+            height: 60px;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        nav ul li {
+            margin-left: 20px;
+        }
+        
+        nav ul li a {
+            color: white; 
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover,
+        nav ul li a.active {
+            color: #ff9800; 
+        }
+        
+        main {
+            padding: 20px;
+        }
+
+        /* Additional Styles */
+        .about-overview {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .about-image {
+            width: 100%; 
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 8px; /* Rounded corners */
+            margin-top: 20px; /* Space above image */
+        }
+
+        .mission-vision, .history, .team, .impact {
+            margin-bottom: 40px; /* Spacing between sections */
+        }
+
+        .team-content {
+            display: flex; 
+            justify-content: space-around; 
+            flex-wrap: wrap; /* Allows wrapping on smaller screens */
+        }
+
+        .team-member {
+            width: 200px; /* Fixed width for team members */
+            text-align: center; 
+            margin: 10px; /* Spacing between team members */
+        }
+
+        .team-member img {
+            width: 100%; /* Responsive image */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 50%; /* Circular profile pictures */
+        }
+
+        footer {
+    background-color: #283593; /* Dark blue background */
+    color: white; /* White text */
+    padding: 20px; /* Padding around footer */
+    font-size: 0.9em; /* Slightly smaller font */
+}
+
+.footer-container {
+    display: flex; /* Flexbox layout */
+    flex-wrap: wrap; /* Wrap sections on small screens */
+    justify-content: space-between; /* Space between sections */
+}
+
+.footer-section {
+    flex: 1; /* Each section takes equal width */
+    margin: 10px; /* Margin between sections */
+    min-width: 250px; /* Minimum width for smaller screens */
+}
+
+.footer-section h4 {
+    margin-bottom: 10px; /* Space below headings */
+}
+
+.footer-section p,
+.footer-section a {
+    color: white; /* White text for readability */
+    text-decoration: none; /* Remove underline */
+}
+
+.footer-section a:hover {
+    text-decoration: underline; /* Underline on hover for links */
+}
+
+.social-links {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.social-links li {
+    display: inline; /* Display links inline */
+    margin-right: 10px; /* Space between social links */
+}
+
+.footer-bottom {
+    text-align: center; /* Center align bottom text */
+    margin-top: 20px; /* Space above */
+}
+
+        /* Responsive Styles */
+        @media (max-width: 600px) {
+            .team-content {
+                flex-direction: column; /* Stack members on small screens */
+                align-items: center; /* Center alignment */
+            }
+
+            .team-member {
+                width: 90%; /* Full width on smaller screens */
+            }
+        }
+        .about-image {
+    width: 60%; /* Smaller width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .about-image {
+        width: 90%; /* Full width on smaller screens */
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Nonprofit Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="donation.html">Donation</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="about-overview">
+            <h1>About Us</h1>
+            <p>We are a passionate nonprofit organization dedicated to making a positive impact in our community. Our mission is to empower individuals through education, support, and resources.</p>
+            <img src="Maltahohe-banner-1.jpg" alt="Maltahohe-banner-1" class="about-image">
+        </section>
+
+        <section class="mission-vision">
+            <h2>Our Mission & Vision</h2>
+            <div class="mission-vision-content">
+                <div class="mission">
+                    <h3>Our Mission</h3>
+                    <p>Our mission is to provide essential resources, education, and support to underserved individuals and families, helping them reach their full potential.</p>
+                </div>
+                <div class="vision">
+                    <h3>Our Vision</h3>
+                    <p>We envision a world where every individual has access to education, mental health support, and the tools necessary to succeed in life.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="history">
+            <h2>Our History</h2>
+            <p>Founded in 2010 by a group of committed individuals and local advocates, our organization began as a grassroots effort to address the challenges faced by our community. Over the years, we have evolved and expanded our services to address the diverse needs of those we serve.</p>
+            <p>Initially focused on providing educational resources, our programs have since expanded to include mental health support, vocational training, and community engagement initiatives.</p>
+            <img src="history.jpg" alt="History Image" class="about-image">
+        </section>
+
+        <section class="team">
+            <h2>Meet Our Team</h2>
+            <div class="team-content">
+                <div class="team-member">
+                    <img src="team-member1.jpg" alt="Team Member 1">
+                    <h3>KIGENYI SHAMIRU AKA LAMX RITCHIE 254</h3>
+                    <p>Founder & Executive Director</p>
+                </div>
+                <div class="team-member">
+                    <img src="team-member2.jpg" alt="Team Member 2">
+                    <h3>NDASE ALLAN</h3>
+                    <p>Program Coordinator</p>
+                </div>
+                <div class="team-member">
+                    <img src="team-member3.jpg" alt="Team Member 3">
+                    <h3>SSALI IMURAN</h3>
+                    <p>Community Outreach Specialist</p>
+                </div>
+                <div class="team-member">
+                    <img src="team-member4.jpg" alt="Team Member 4">
+                    <h3>WUKOTI CONSTANT</h3>
+                    <p>Fundraising Manager</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="impact">
+            <h2>Our Impact</h2>
+            <p>To date, we have successfully supported over 10,000 individuals through our programs. Whether providing educational scholarships for children, catering to mental health needs, or offering vocational training, your support makes a real difference.</p>
+            <p>We believe in the transformative power of education and community support, and we are dedicated to creating sustainable change.</p>
+            <a href="donation.html" class="cta-button">Make a Donation</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <p>We are committed to making a difference in the lives of individuals and families in our community through various programs focused on education, mental health support, and empowerment.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="donation.html">Donation</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: <a href="mailto:info@nonprofitorganization.org">info@nonprofitorganization.org</a></p>
+                <p>Phone: <a href="tel:+1234567890">(123) 456-7890</a></p>
+                <p>Address: 123 Nonprofit St, Iganga, Eastern Uganda</p>
+            </div>
+    
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <ul class="social-links">
+                    <li><a href="https://facebook.com/yourpage" target="_blank">Facebook</a></li>
+                    <li><a href="https://twitter.com/yourpage" target="_blank">Twitter</a></li>
+                    <li><a href="https://instagram.com/yourpage" target="_blank">Instagram</a></li>
+                    <li><a href="https://linkedin.com/company/yourpage" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2022 Gracious Initiative Charity Organization. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
